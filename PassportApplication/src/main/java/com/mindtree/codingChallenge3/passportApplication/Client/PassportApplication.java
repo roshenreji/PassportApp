@@ -85,7 +85,7 @@ public class PassportApplication {
 		boolean isValid = true;
 		Person person = null;
 		Passport passport = null;
-		System.out.println("Hello All");
+		System.out.println("Hello All ");
 
 		do {
 			displayMessages();
