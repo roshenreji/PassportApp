@@ -36,6 +36,7 @@ pipeline {
         stage('Compile'){
                 steps{
                      dir("C:/Users/roshe/.jenkins/workspace/JenkinChallenge/PassportApplication"){
+                       $SONAR_MAVEN_GOAL
                         sh 'echo Compile'
                          sh 'mvn  compile'
                      }
