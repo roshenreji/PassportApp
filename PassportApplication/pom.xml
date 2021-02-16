@@ -12,9 +12,14 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<sonar.projectKey>roshenreji_PassportApp</sonar.projectKey>
+  <sonar.organization>roshenreji</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
 
+
   <dependencies>
+	
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
