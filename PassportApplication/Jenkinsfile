@@ -44,8 +44,10 @@ pipeline {
         }
         stage('Sonar Analysis'){
             steps{
-                withSonarQubeEnv('SonarCloud'){
-                sh 'mvn sonar:sonar'
+                 dir("C:/Users/roshe/.jenkins/workspace/JenkinChallenge/PassportApplication"){
+                    withSonarQubeEnv('SonarCloud'){
+                    sh 'mvn sonar:sonar'
+                  }
             }
             }
             
