@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    tools{
+        maven 'maven'
+        jdk 'jdk'
+    }
     stages{
           stage('Fetch') {
             steps {
@@ -47,9 +51,12 @@ pipeline {
             steps{
                  dir("C:/Users/roshe/.jenkins/workspace/JenkinChallenge/PassportApplication"){
                     withSonarQubeEnv('SonarCloud'){
-                    sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar'
+                        withMaven(maven:'maven'){
+                            sh 'mvn sonar:sonar'
+                        }
+                        
                   }
-            }
+                }
             }
             
         }
