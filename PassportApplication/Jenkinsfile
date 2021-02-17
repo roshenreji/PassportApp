@@ -47,7 +47,7 @@ pipeline {
                 }
             
         }
-        /*stage('Sonar Analysis'){
+        stage('Sonar Analysis'){
             steps{
                  dir("C:/Users/roshe/.jenkins/workspace/JenkinChallenge/PassportApplication"){
                     withSonarQubeEnv('SonarCloud'){
@@ -59,7 +59,7 @@ pipeline {
                 }
             }
             
-        }*/
+        }
         stage('Build'){
             steps {
                  dir("C:/Users/roshe/.jenkins/workspace/JenkinChallenge/PassportApplication"){
@@ -71,7 +71,7 @@ pipeline {
             
             post {
                 always {
-                    junit '**/target/surefire-reports/TEST-*.xml'
+                    //junit '**/target/surefire-reports/TEST-*.xml'
                     archiveArtifacts 'PassportApplication/target/*.jar'
                      }
                 }
