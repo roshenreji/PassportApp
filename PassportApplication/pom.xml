@@ -12,12 +12,13 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
 <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 <sonar.projectKey>roshenreji_PassportApp</sonar.projectKey>
   <sonar.organization>roshenreji</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-  <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+  
   </properties>
 	
 	
@@ -37,10 +38,6 @@
 			<version>8.0.23</version>
 		</dependency>
   </dependencies>
-   <plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-    </plugin>
-
+   
     
 </project>
