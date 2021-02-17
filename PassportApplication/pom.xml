@@ -37,5 +37,9 @@
 			<version>8.0.23</version>
 		</dependency>
   </dependencies>
+   <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+      </plugin>
 
 </project>
